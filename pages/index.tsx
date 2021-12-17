@@ -39,6 +39,9 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      <div className={"bg-omlet desktop:text-[40px] desktop:text-center tablet:text-[20px] tablet:text-left"}>
+        Desktop
+      </div>
       <main className={styles.main}>
         <div className={"flex justify-center space-x-4"}>
           <div className={ThemeDef.menuText}>gogogogo</div>
@@ -49,6 +52,7 @@ const Home: NextPage = () => {
         <div className={"text-[32px] text-[#ff0055] before:content-['hello\_world']"}>
           test
         </div>
+
         <img className={ThemeDef.avatarSmall} src="https://upload.wikimedia.org/wikipedia/zh/thumb/9/9f/Twitter_bird_logo_2012.svg/1200px-Twitter_bird_logo_2012.svg.png" />
         <a href="url" className="hover:underline">Title</a>
         <Notification imageUrl={url} title={"GOGO"} message={"GOGOGO----"} imageAlt={"alt"} />
