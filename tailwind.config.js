@@ -4,19 +4,19 @@ module.exports = {
   content: ["./pages/**/*.{tsx,js}"],
   darkMode: 'class',
   theme: {
-    colors:{
-      transparent: 'transparent',
-      current: 'currentColor',
-      blue: colors.blue,
-      red: colors.red,
-      black: colors.black,
-      white: colors.white,
-      gray: colors.gray,
-      emerald: colors.emerald,
-      indigo: colors.indigo,
-      yellow: colors.yellow,
-      'omlet':"#ff6948",
-    },
+    // colors:{
+    //   transparent: 'transparent',
+    //   current: 'currentColor',
+    //   blue: colors.blue,
+    //   red: colors.red,
+    //   black: colors.black,
+    //   white: colors.white,
+    //   gray: colors.gray,
+    //   emerald: colors.emerald,
+    //   indigo: colors.indigo,
+    //   yellow: colors.yellow,
+    //   'omlet':"#ff6948",
+    // },
     screens: {
       'tablet': '320px',
       // => @media (min-width: 640px) { ... }
@@ -27,7 +27,11 @@ module.exports = {
       'desktop': '1280px',
       // => @media (min-width: 1280px) { ... }
     },
-    extend: {},
+    extend: {
+      colors:{
+        'omlet':"#ff6948",
+      }
+    },
   },
   plugins: [
     require('@tailwindcss/forms'),
