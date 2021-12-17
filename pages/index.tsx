@@ -14,13 +14,13 @@ function Notification({ imageUrl, imageAlt, title, message }) {
       <div className="shrink-0">
         <img className="h-12 w-12" src={imageUrl} alt={imageAlt}/>
       </div>
-      <div>
+      <div className={"top-[100px]"}>
         <div className="text-xl font-medium text-black">{title}</div>
         <p className="text-gray-500">{message}</p>
         <div className={"btn-primary"}>
           GOGO
         </div>
-        <div className={"btn-danger"}>
+        <div className={"btn-danger  text-[22px]" } >
           GOGO
         </div>
       </div>
@@ -45,6 +45,9 @@ const Home: NextPage = () => {
           <div className={ThemeDef.menuText}>gogogogo</div>
           <div className={ThemeDef.menuText}>gogogogo</div>
           <div className={ThemeDef.menuText}>gogogogo</div>
+        </div>
+        <div className={"text-[32px] text-[#ff0055] before:content-['hello\_world']"}>
+          test
         </div>
         <img className={ThemeDef.avatarSmall} src="https://upload.wikimedia.org/wikipedia/zh/thumb/9/9f/Twitter_bird_logo_2012.svg/1200px-Twitter_bird_logo_2012.svg.png" />
         <a href="url" className="hover:underline">Title</a>
